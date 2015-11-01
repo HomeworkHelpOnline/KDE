@@ -6,7 +6,7 @@ def gaussian(x,b=1):
     return np.exp(-x**2/(2*b**2))/(b*np.sqrt(2*np.pi))
 
 #Let's take any value
-X=np.array([2.2, 3.9, 2, 1, 4, 5, 4.5, 3.2, 1.2, 1.1, 4.1, 1.4, 3.2])
+X=np.random.normal(2.5, 0.9, 14)
 N=len(X)
 # Plot all available kernels
 X_plot = np.linspace(-1, 7, 100)[:, None]
